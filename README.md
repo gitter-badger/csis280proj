@@ -14,3 +14,26 @@ For the equation, you need to convert an infix equation into postfix. The follow
 Remember to use the support routines and the variables in the Interpret class (especially lineNum and stk).
 
 Submit the code and who you worked with on the project.
+
+## MinusMinus BNF
+Not sure if we'll need it or not but here it is.
+```<MinusMinus> ::= <statements>
+<statements> ::= <statement>|<statments><statement> | empty string
+<statement> ::= declare <variableList> |
+                            if <booleanExpression> <statements> endif | 
+                            while <booleanExpression> <statements> endwhile |
+                            return <expression> |
+                            input <variable> | input <stringConstant>,<variable> |
+                            print <printlist> | println <printlist>
+                            rem <string> |
+                            variable := <expression> | variable := <function>(parameterlist) |
+                            <function>(variablelist)
+
+<variable> ::= <identifier>
+<function> ::= <identifier>
+<identifier> ::= <letter> | <letter><digit> 
+<letter> ::=  a | b | … | z | A | B | … | Z
+<digit> ::=  0 | 1 | … | 9
+<expression> ::= <term> { (+ | - )} <term>
+<term> ::= <factor> { (* | / )} <factor>
+<factor> ::= <identifier> | integerConstant | (expression)
