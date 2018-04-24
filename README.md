@@ -3,7 +3,9 @@ CSIS 280 #3406 | Spring 2018 Glendale Community College | MinusMinus Interp. Pro
 
 ## Assignment Definition
 <b>Project
-60 pts</b>
+60 pts
+
+DEADLINE: May 23rd, 2018</b>
 
 Use the MinusMinus.zip skeleton under Files in Moodle to create an interpreter for the MinusMinus language. You need to complete the equation and execute functions. You can team up with someone else (no more than 3 to a team).
 With the execute function, remember it is emulation one function and needs to have passed to it a SymbolTable and space on the stack of stk for return value and any parameters. And if it needs to execute another function, have it create another SymbolTable and save the lineNum as a local variable and put any passed arguments onto the stack before recursively calling itself.
