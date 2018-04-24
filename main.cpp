@@ -1,4 +1,6 @@
-//
+// CS/IS 280
+// Group members: James Lord, Thomas Kellogg, Krystal Maughan
+
 //  main.cpp
 //  MinusMinus
 //
